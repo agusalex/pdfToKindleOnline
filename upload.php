@@ -28,8 +28,8 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
 
       if(move_uploaded_file($fileTmpPath, $dest_path)) 
       {
-        $message = shell_exec('echo -ne "\n" | k2pdfopt -dev pw3 '. $fileTmpPath . ' -o output.pdf >> log.log');
-        $message = "file converted!". $fileTmpPath;
+        $message = shell_exec('echo -ne "\n" | k2pdfopt -dev pw3 '. $dest_path . ' -o output.pdf >> log.log');
+        $message = "file converted!";
         $_SESSION['message'] = $message;
       }
       else 
