@@ -21,7 +21,7 @@ session_start();
     </div>
 
     <input type="submit" name="uploadBtn" value="Upload" />
-    <a href="download.php?file=output.pdf">Download file</a>
+    <a href="download.php?name=output.pdf">Download file</a>
   </form>
 </body>
 </html>
