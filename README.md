@@ -1,2 +1,2 @@
 # pdfToKindleOnline
-Really rough and basic PDF to Kindle converter using k2pdfopt.
+Really rough and basic php PDF to Kindle converter using k2pdfopt.
