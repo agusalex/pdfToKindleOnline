@@ -6,5 +6,20 @@
 
 
 Really rough and basic php PDF to Kindle converter using k2pdfopt.
+
+Running it is easy!
+
+    docker -d -p 8080:8080 agusalex/pdftokindle
+
+**Default Max size for PDF is** : 300MB
+To change this set:
+
+    PHP_FPM_UPLOAD_MAX_FILESIZE=max_sizeM
+    SERVER_MAX_BODY_SIZE=max_sizeM
+
+For complete list of enviromental variables check [**behance/docker-php**](https://github.com/behance/docker-php?files=1#downstream-configuration) 
+
+
 # Docker Image Available
 https://hub.docker.com/repository/docker/agusalex/pdftokindle
+
