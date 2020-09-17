@@ -1,3 +1,2 @@
-FROM php:7.0-apache
-COPY . /var/www/html
-EXPOSE 80
+FROM behance/docker-php:7.3
+COPY ./ /app
