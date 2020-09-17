@@ -6,8 +6,11 @@
 
 
 Really rough and basic php PDF to Kindle converter using k2pdfopt.
+
+
 Try it out!
-https://pdftokindle.herokuapp.com/. (Only small filesizes <100kb work on Heroku because of its RAM restrictions)
+https://pdftokindle.herokuapp.com/
+(Only small filesizes <100kb work on Heroku because of its RAM restrictions)
 
 
 Running it is easy!
