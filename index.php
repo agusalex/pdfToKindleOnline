@@ -12,7 +12,7 @@ session_start();
 if (isset($_SESSION['message']) && $_SESSION['message']):
 	?>
     <div class="uk-container">
-        <div class="<?php echo($_SESSION['message'] === 'file converted!' ? 'uk-alert-success' : 'uk-alert-danger'); ?>"
+        <div class="<?php echo(strpos($_SESSION['message'], 'successfully') !== false ? 'uk-alert-success' : 'uk-alert-danger'); ?>"
              uk-alert>
             <a class="uk-alert-close" uk-close></a>
             <p><?php echo $_SESSION['message'] ?></p>
@@ -27,7 +27,7 @@ endif;
 
 		<?php
 		if (isset($_SESSION['message']) && $_SESSION['message']):
-			if ($_SESSION['message'] === 'file converted!'):
+			if (strpos($_SESSION['message'], 'successfully') !== false):
 				?>
                 <a href="download.php?name=output.pdf" class="uk-button uk-button-primary">Download file</a>
 			<?php
