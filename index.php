@@ -39,8 +39,9 @@ endif;
 			?>
             <form method="POST" action="upload.php" enctype="multipart/form-data">
                 <div class="uk-margin">
-                    <div uk-form-custom>
-                        <input type="file" name="uploadedFile">
+                    <div uk-form-custom="target: true">
+                        <input type="file" name="uploadedFile" />
+                        <input type="text" class="uk-input uk-form-width-medium" type="text" placeholder="Select file" />
                         <button class="uk-button uk-button-default" type="button" tabindex="-1">Select file</button>
                     </div>
                 </div>
