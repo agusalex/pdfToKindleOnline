@@ -15,7 +15,7 @@ https://pdftokindle.herokuapp.com/
 
 Running it is easy!
 
-    docker -d -p 8080:8080 agusalex/pdftokindle
+    docker run -d -p 8080:8080 agusalex/pdftokindle
 
 **Default Max size for PDF is** : 300MB
 To change this set:
